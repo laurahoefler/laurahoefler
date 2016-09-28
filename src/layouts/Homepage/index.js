@@ -16,7 +16,7 @@ const Homepage = (props, { collection }) => {
 
   return (
     <Page { ...props }>
-      <div className={ styles.plateContainer }>
+      <div className={ styles.container }>
         <div className={ styles.plateOuter }>
           <div className={ styles.plateInner }>
             <nav className={ styles.soup }>

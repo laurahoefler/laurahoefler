@@ -1,23 +1,18 @@
-.plateContainer {
-  font-size: 6px;
+.container {
+  font-size: 1.25vw;
   background: url('/assets/spoon.svg') 100% 50% no-repeat;
   background-size: contain;
 }
 
-@media (min-width: 480px) {
-  .plateContainer {
-    font-size: 8px;
+@media (max-width: 480px) {
+  .container {
+    font-size: 6px;
+    background-image: none;
   }
 }
 
-@media (min-width: 720px) {
-  .plateContainer {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 980px) {
-  .plateContainer {
+@media screen and (min-width: 960px) {
+  .container {
     font-size: 12px;
   }
 }
@@ -37,7 +32,7 @@
 }
 
 .navItem {
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: Baloo, Arial Rounded, sans-serif;
   text-shadow: 0 0 0.3em rgba(0, 0, 0, 0.2);
   letter-spacing: 0.12em;
