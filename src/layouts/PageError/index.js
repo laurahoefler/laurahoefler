@@ -1,9 +1,11 @@
 import React, { PropTypes } from "react"
+import { Link } from "phenomic/lib/Link"
+
 import styles from "./index.css"
 
 const PageError = ({ error, errorText }) => (
   <div className={ styles.container }>
-    <div className={ styles.oops }>{ "😱 Oooops!" }</div>
+    <div className={ styles.oops }>{ "Hoppla!" }</div>
     <div className={ styles.text }>
       <p className={ styles.title }>
         <strong>{ error }</strong>
@@ -13,10 +15,11 @@ const PageError = ({ error, errorText }) => (
       {
         error === 404 &&
         <div>
-          { "It seems you found a broken link. " }
-          { "Sorry about that. " }
+          { "Hier gibt es leider nichts zu sehen." }
           <br />
-          { "Do not hesitate to report this page 😁." }
+          <Link to="/">
+            { "Zur Startseite." }
+          </Link>
         </div>
       }
     </div>
@@ -30,7 +33,7 @@ PageError.propTypes = {
 
 PageError.defaultProps = {
   error: 404,
-  errorText: "Page Not Found",
+  errorText: "Seite nicht gefunden",
 }
 
 export default PageError

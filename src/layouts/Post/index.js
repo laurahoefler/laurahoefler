@@ -9,6 +9,7 @@ const Post = (props) => {
   return (
     <Page
       { ...props }
+      title={ props.head.title }
       header={
         <header>
         {

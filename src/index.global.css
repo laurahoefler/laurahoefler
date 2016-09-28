@@ -1,5 +1,18 @@
 /* Using global sytles is not recommended, prefer local styles via CSS Modules */
 
+@import url("https://fonts.googleapis.com/css?family=Baloo|Rubik:400,700");
+@import url("https://cdn.rawgit.com/still-life-studio/txt.wav/master/dist/css/txt.wav.css");
+
+/* Variables */
+:root {
+  --gray-hue: 210;
+  --gray-darker: hsl(var(--gray-hue), 20%, 35%);
+  --gray-dark: hsl(var(--gray-hue), 17%, 55%);
+  --gray: hsl(var(--gray-hue), 20%, 65%);
+  --gray-light: hsl(var(--gray-hue), 25%, 85%);
+  --gray-lighter: hsl(var(--gray-hue), 40%, 92.5%);
+}
+
 /*
  * box model like it should be
  *
@@ -27,15 +40,17 @@ body {
  */
 html {
   min-height: 100%;
-  background: color(#deecf1 a(0.4));
+  background: var(--gray-lighter);
+  color: var(--gray-darker);
+  overflow-y: scroll;
 }
 
 body {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
 
   /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Rubik, sans-serif;
 }
 
 /*
@@ -44,39 +59,88 @@ body {
  * anchors for markdown headings, generated via markdown renderer, so require
  * global styling
  */
-@custom-selector :--headings h1, h2, h3, h4, h5, h6;
-
-:--headings {
-  position: relative;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Baloo;
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
-:root {
-  --phenomic-HeadingAnchor-width: 1.4rem;
-  --phenomic-HeadingAnchor-margin: 0.4rem;
+p,
+ul,
+ol {
+  margin-top: 0.5em;
 }
 
 .phenomic-HeadingAnchor {
-  display: inline-block;
-  text-align: center;
-  margin-left: calc(-1 * (var(--phenomic-HeadingAnchor-width) + var(--phenomic-HeadingAnchor-margin)));
-  margin-right: var(--phenomic-HeadingAnchor-margin);
-  width: var(--phenomic-HeadingAnchor-width);
-  line-height: var(--phenomic-HeadingAnchor-width);
-  text-decoration: none;
-  opacity: 0.1;
-  transition: opacity 0.2s;
-
-  @nest :--headings:hover & {
-    opacity: 1;
-  }
+  display: none;
 }
 
 /* minimal styling, prefer removing this and use local styles */
 a {
-  color: #0e63e3;
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-/* handy for content */
+a:hover {
+  color: var(--gray-dark);
+}
+
 img {
+  display: block;
   max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+}
+
+img.small {
+  max-width: 70%;
+}
+
+.round {
+  border-radius: 999px;
+}
+
+.oval {
+  border-radius: 50%;
+}
+
+@media (min-width: 720px) {
+  .right {
+    float: right;
+    margin-left: 2em;
+  }
+
+  .left {
+    float: left;
+    margin-right: 2em;
+  }
+
+  .right,
+  .left {
+    max-width: 50%;
+  }
+
+  .small.right,
+  .small.left {
+    max-width: 40%;
+  }
+}
+
+.at::before {
+  content: "@";
+}
+
+.at span {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }

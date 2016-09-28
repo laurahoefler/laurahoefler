@@ -1,6 +1,5 @@
 .content {
-  flex: 1;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
+  max-width: 60rem;
+  margin: auto;
+  padding: 1rem 0.75rem;
 }

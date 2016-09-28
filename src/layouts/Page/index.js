@@ -10,6 +10,7 @@ const Page = (
     __filename,
     __url,
     head,
+    title,
     body,
     header,
     footer,
@@ -48,8 +49,8 @@ const Page = (
         meta={ meta }
       />
       {
-        head.title &&
-        <h1 className={ styles.heading }>{ head.title }</h1>
+        title &&
+        <h1>{ title }</h1>
       }
       { header }
       <BodyContainer>{ body }</BodyContainer>
@@ -64,6 +65,7 @@ Page.propTypes = {
   __filename: PropTypes.string.isRequired,
   __url: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired,
+  title: PropTypes.string,
   body: PropTypes.string.isRequired,
   header: PropTypes.element,
   footer: PropTypes.element,

@@ -1,44 +1,47 @@
 import React, { PropTypes } from "react"
-import { Link } from "react-router"
+import Headroom from "react-headroom"
+import { Link } from "phenomic/lib/Link"
 
 import styles from "./index.css"
-import Svg from "react-svg-inline"
-import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
-import gitHubSvg from "../icons/iconmonstr-github-1.svg"
 
-const Header = (props, { metadata: { pkg } }) => (
-  <header className={ styles.header }>
-    <nav className={ styles.nav }>
-      <div className={ styles.navPart1 }>
-        <Link
-          className={ styles.link }
-          to="/"
-        >
-          { "Home" }
-        </Link>
-      </div>
-      <div className={ styles.navPart2 }>
-        { pkg.twitter &&
-          <a
-            href={ `https://twitter.com/${pkg.twitter}` }
-            className={ styles.link }
+const Header = () => (
+  <Headroom>
+    <header className={ styles.header }>
+      <nav className={ styles.nav }>
+        <div className={ styles.navPart1 }>
+          <Link
+            className={ styles.logo }
+            to="/"
           >
-            <Svg svg={ twitterSvg } cleanup />
-              { "Twitter" }
-          </a>
-        }
-        { pkg.repository &&
-          <a
-            href={ pkg.repository }
+            { "Laura Höfler" }
+          </Link>
+        </div>
+        <div className={ styles.navPart2 }>
+          <Link
             className={ styles.link }
+            activeClassName={ styles.linkActive }
+            to="/ueber-mich/"
           >
-            <Svg svg={ gitHubSvg } cleanup />
-            { "GitHub" }
-          </a>
-        }
-      </div>
-    </nav>
-  </header>
+            { "Über mich" }
+          </Link>
+          <Link
+            className={ styles.link }
+            activeClassName={ styles.linkActive }
+            to="/referenzen/"
+          >
+            { "Referenzen" }
+          </Link>
+          <Link
+            className={ styles.link }
+            activeClassName={ styles.linkActive }
+            to="/kontakt/"
+          >
+            { "Kontakt" }
+          </Link>
+        </div>
+      </nav>
+    </header>
+  </Headroom>
 )
 
 Header.contextTypes = {
