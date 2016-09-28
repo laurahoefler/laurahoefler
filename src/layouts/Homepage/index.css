@@ -22,10 +22,7 @@
   }
 }
 
-.plate,
-.plateOuter,
-.plateInner,
-.soup {
+.plate {
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -65,7 +62,7 @@
 }
 
 .plateOuter {
-  /* composes: plate; */
+  composes: plate;
   margin: 5em auto;
   background: linear-gradient(to bottom, #f6f6f6, #e5e5e5);
   width: 50em;
@@ -75,7 +72,7 @@
 }
 
 .plateInner {
-  /* composes: plate; */
+  composes: plate;
   background: linear-gradient(to bottom, #e5e5e5, #f6f6f6);
   width: 37.5em;
   height: 37.5em;
@@ -83,7 +80,7 @@
 }
 
 .soup {
-  /* composes: plate; */
+  composes: plate;
   width: 33em;
   height: 33em;
   background-color: rgba(180, 150, 90, 0.5);

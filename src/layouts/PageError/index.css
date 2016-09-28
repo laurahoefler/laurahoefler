@@ -5,12 +5,13 @@
   align-items: center;
   min-height: 50vh;
   padding: 1rem 0;
+  font-size: 18px;
 }
 
 .oops {
   font-size: 4rem;
   line-height: 4rem;
-  color: #ddd;
+  opacity: 0.2;
 }
 
 .title {
