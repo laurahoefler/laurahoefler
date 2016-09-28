@@ -6,7 +6,7 @@ import styles from "./index.css"
 const PageLoading = () => (
   <div>
     <Helmet
-      title={ "Loading..." }
+      title={ "Seite wird geladen..." }
     />
     <div className={ styles.loader }>
       <div className={ styles.spinner }></div>

@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
   <div hidden>
     <Helmet
+      htmlAttributes={ { "lang": "de" } }
       meta={ [
         {
           name: "generator", content: `${

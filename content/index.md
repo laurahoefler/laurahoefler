@@ -1,4 +1,4 @@
 ---
-title: Laura Höfler - Redakteurin
+title: Redakteurin
 layout: Homepage
 ---
