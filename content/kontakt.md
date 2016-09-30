@@ -14,5 +14,7 @@ Momentan arbeite ich von Dresden aus als freie Online Redakteurin und Texterin. 
 <br/>
 Laura Höfler<br/>
 +49 (0)351 45 69 79 33<br/>
-laura.hoefler<span class="at"><span> (at) </span></span>gmx.de<br/>
+<a href="javascript://" onclick="location=['mai',this.textContent.replace(' (at) ','\x40')].join('lto:')">
+laura.hoefler<span class="at"><span> (at) </span></span>gmx.de
+</a><br/>
 [XING](https://www.xing.com/profile/Laura_Hoefler2)

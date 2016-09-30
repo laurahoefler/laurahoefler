@@ -11,7 +11,9 @@ Laura Höfler<br/>
 Käthe-Kollwitz-Ufer 27<br/>
 01307 Dresden<br/>
 +49 (0)351 45 69 79 33<br/>
+<a href="javascript://" onclick="location=['mai',this.textContent.replace(' (at) ','\x40')].join('lto:')">
 laura.hoefler<span class="at"><span> (at) </span></span>gmx.de
+</a>
 
 ## Inhaltlich verantwortlich gemäß § 6 MDStV
 Laura Höfler, Anschrift wie oben
