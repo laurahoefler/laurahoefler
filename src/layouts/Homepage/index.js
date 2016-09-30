@@ -27,11 +27,7 @@ const Homepage = (props, { collection }) => {
                     className={ styles.navItem }
                   >
                     <Link
-                      className={ [
-                        styles.link,
-                        "txtwav",
-                        "slow",
-                      ].join(" ") }
+                      className={ styles.link }
                       to={ page.__url }
                     >
                       { page.title.split("").map((char, i) => (
