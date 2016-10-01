@@ -18,6 +18,12 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ] }
+      link={ [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Baloo|Rubik",
+        },
+      ] }
       script={ [
         { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
       ] }

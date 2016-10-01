@@ -1,7 +1,5 @@
 /* Using global sytles is not recommended, prefer local styles via CSS Modules */
 
-@import url("https://fonts.googleapis.com/css?family=Baloo|Rubik:400,700");
-
 /* Variables */
 :root {
   --gray-hue: 210;
@@ -66,7 +64,6 @@ h5,
 h6 {
   font-family: Baloo;
   font-weight: normal;
-  margin-top: 1em;
   margin-bottom: 0;
 }
 
