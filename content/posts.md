@@ -1,4 +1,4 @@
 ---
-title: Neuigkeiten
+title: Beiträge
 layout: Archive
 ---
