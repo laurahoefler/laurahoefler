@@ -12,17 +12,15 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         },
         { property: "og:site_name", content: pkg.name },
         { name: "twitter:site", content: `@${ pkg.twitter }` },
+        {
+          name: "google-site-verification",
+          content: "OmqEYN_9n6Hzh_hTsjemUp9f0F-JrYCMXAVvRWkzw1Y",
+        },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
       ] }
       script={ [
         { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
       ] }
-    />
-
-    { /* meta viewport safari/chrome/edge */ }
-    <Helmet
-      meta={ [ {
-        name: "viewport", content: "width=device-width, initial-scale=1",
-      } ] }
     />
     <style>{ "@-ms-viewport { width: device-width; }" }</style>
   </div>
