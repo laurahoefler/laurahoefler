@@ -13,7 +13,9 @@
     "pretest": "npm run lint",
     "test": "npm run build",
     "predeploy": "npm run build",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "./scripts/deploy.sh",
+    "predeploy:travis": "npm run build",
+    "deploy:travis": "./scripts/deploy-travis.sh"
   },
   "phenomic": {
     "cache": true,
