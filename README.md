@@ -1,4 +1,6 @@
-# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
+# Site built with [Phenomic](https://github.com/MoOx/phenomic)
+
+[![Build Status](https://travis-ci.org/laurahoefler/laurahoefler.github.io.svg?branch=src)](https://travis-ci.org/laurahoefler/laurahoefler.github.io)
 
 ## Install dependencies
 
@@ -16,4 +18,10 @@ npm start
 
 ```sh
 npm run build
+```
+
+## Build and deploy to production
+
+```sh
+npm run deploy
 ```

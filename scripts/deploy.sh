@@ -7,4 +7,4 @@ git config user.name "Deploy User"
 git config user.email "deploy@laurahoefler.github.io"
 git add .
 git commit -m "Deploy to GitHub Pages"
-git push --force "https://${GH_TOKEN}${GH_REPO}" master
+git push --force --quiet "https://${GH_TOKEN}${GH_REPO}" master
