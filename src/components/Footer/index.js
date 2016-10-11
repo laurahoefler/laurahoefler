@@ -6,11 +6,8 @@ import styles from "./index.css"
 
 const Footer = (props, { collection }) => {
   const pages = enhanceCollection(collection, {
-    filter: {
-      layout: "Page",
-      nav: "footer",
-    },
-    sort: "order",
+    filter: filter => typeof filter.footernav === "number",
+    sort: "footernav",
   })
 
   return (

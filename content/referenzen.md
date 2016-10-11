@@ -1,8 +1,7 @@
 ---
 title: Referenzen
 layout: Page
-order: 2
-nav: main
+mainnav: 2
 ---
 
 # Referenzen

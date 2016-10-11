@@ -1,8 +1,7 @@
 ---
 title: Kontakt
 layout: Page
-order: 3
-nav: main
+mainnav: 3
 ---
 
 <img src="/assets/laura-hoefler.jpg" alt="Laura Höfler" class="oval small right" />

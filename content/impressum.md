@@ -1,7 +1,7 @@
 ---
 title: Impressum
 layout: Page
-nav: footer
+footernav: 1
 ---
 
 # Impressum

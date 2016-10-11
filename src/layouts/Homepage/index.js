@@ -7,11 +7,8 @@ import Page from "../Page"
 
 const Homepage = (props, { collection }) => {
   const pages = enhanceCollection(collection, {
-    filter: {
-      layout: "Page",
-      nav: "main",
-    },
-    sort: "order",
+    filter: filter => typeof filter.mainnav === "number",
+    sort: "mainnav",
   })
 
   return (

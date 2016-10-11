@@ -1,8 +1,7 @@
 ---
 title: Über mich
 layout: Page
-order: 1
-nav: main
+mainnav: 1
 ---
 
 # Über mich
