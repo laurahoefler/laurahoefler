@@ -12,14 +12,13 @@ const Footer = (props, { collection }) => {
 
   return (
     <footer className={ styles.footer }>
-      { "Copyright © " }
+      { " Copyright © " }
       { new Date().getFullYear() }
       { " Laura Höfler " }
       { pages.map((page, i) => [
         " • ",
         <Link
           key={ `page-${ i }-${ page.__url }` }
-          className={ styles.link }
           to={ page.__url }
         >
           { page.title }

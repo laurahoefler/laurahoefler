@@ -25,7 +25,7 @@ const Page = (
     `Your page '${ __filename }' needs a title`
   )
 
-  const metaTitle = head.metaTitle ? head.metaTitle : head.title
+  const metaTitle = `Laura Höfler - ${ head.metaTitle || head.title }`
 
   const meta = [
     { property: "og:type", content: "article" },
@@ -45,7 +45,7 @@ const Page = (
   return (
     <div className={ styles.page }>
       <Helmet
-        title={ `Laura Höfler - ${metaTitle}` }
+        title={ metaTitle }
         meta={ meta }
       />
       {

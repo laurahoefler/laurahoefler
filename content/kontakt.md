@@ -8,7 +8,7 @@ mainnav: 3
 
 # Kontakt
 
-Momentan arbeite ich von Dresden aus als freie Online Redakteurin und Texterin. Ich nehme aber auch gerne Aufträge aus anderen Städten an, arbeite im Homeoffice oder komme zu Ihnen. Kontaktieren Sie mich einfach!
+Momentan arbeite ich von Dresden aus als freie Online-Redakteurin und Texterin. Ich nehme aber auch gerne Aufträge aus anderen Städten an, arbeite im Homeoffice oder komme zu Ihnen. Kontaktieren Sie mich einfach!
 
 <br/>
 Laura Höfler<br/>
