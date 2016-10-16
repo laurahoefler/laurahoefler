@@ -3,14 +3,15 @@ title: Über mich
 layout: Page
 mainnav: 1
 ---
-# Ich interessiere mich besonders für:
+## Ich interessiere mich besonders für:
 * Kultur
 * Literatur
 * Ernährung
 * Gesundheit
 * Soziales
 * Frauenthemen
-
+<br>
+<br>
 
 ## Vita
 
