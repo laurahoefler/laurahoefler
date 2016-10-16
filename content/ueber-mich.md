@@ -8,6 +8,7 @@ mainnav: 1
 * Literatur
 * Ernährung
 * Gesundheit
+* Soziales
 * Frauenthemen
 
 
