@@ -8,7 +8,7 @@ mainnav: 3
 
 # Kontakt
 
-Momentan arbeite ich von Dresden aus als freie Online-Redakteurin und Texterin. Ich nehme aber auch gerne Aufträge aus anderen Städten an, arbeite im Homeoffice oder komme zu Ihnen. Kontaktieren Sie mich einfach!
+Sprache ist mein Metier. Ich weiß über die Kraft der Sprache und möchte Ihnen helfen, diese richtig einzusetzen, um Ihr eigenes Kommunikationsziel zu erreichen. Momentan arbeite ich von Dresden aus als freie Online-Redakteurin und Texterin. Ich nehme aber auch gerne Aufträge aus anderen Städten an, arbeite im Homeoffice oder komme zu Ihnen. Wenn Sie möchten, dass ich Ihre Buchstabensuppe koche, kontaktieren Sie mich einfach!
 
 <br/>
 Laura Höfler<br/>
