@@ -3,8 +3,15 @@ title: Über mich
 layout: Page
 mainnav: 1
 ---
+# Spezialgebiete
+* Kultur
+* Literatur
+* Ernährung
+* Gesundheit
+* Frauenthemen
 
-# Über mich
+
+## Vita
 
 * seit 2016 selbstständige Online-Redakteurin
 * 2015 Online-Projektmanagerin intosite GmbH (Ganske Verlagsgruppe)
