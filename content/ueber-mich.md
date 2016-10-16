@@ -3,7 +3,7 @@ title: Über mich
 layout: Page
 mainnav: 1
 ---
-# Spezialgebiete
+# Ich interessiere mich besonders für:
 * Kultur
 * Literatur
 * Ernährung
