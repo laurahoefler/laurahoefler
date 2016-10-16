@@ -5,9 +5,8 @@ mainnav: 1
 ---
 <br>
 
-## Ich interessiere mich besonders für:
-* Kultur
-* Literatur
+## Meine Spezialgebiete:
+* Theater, Film, Literatur
 * Ernährung
 * Gesundheit
 * Soziales
