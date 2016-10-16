@@ -3,6 +3,8 @@ title: Über mich
 layout: Page
 mainnav: 1
 ---
+<br>
+
 ## Ich interessiere mich besonders für:
 * Kultur
 * Literatur
