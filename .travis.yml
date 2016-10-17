@@ -1,6 +1,20 @@
 language: node_js
+
 node_js: stable
-script: npm run deploy
+
 env:
   global:
     secure: ccGYa3BAodjPTh7ql+gf9HZSgxDXmjdEGwnzI7j8G+uXKp0Un11wUzCm8pJaGzl/pHGcsZaWPO5RKOtW+xMHK5EYzeBYPyu4Gwlq/dsnuqWczTXjX0KpYxyQ+mKVReffWCbeynTDE0vcDl+jHETsh7klWXRHkdk8znRWh7X6t8lqnw4EJIncBuh6Yfqgbc1v+tTj9Jr6I1eEoEjE+WuisuXbLDmJhxKrQL8XPA4wVIY9h4k/OQ7+KKpU1xMs8g9ctnqJ08MmRz62x8Pwe0aTrC7F4x7Wy/xkNzVXltvXHFDh4rNVsqhx+SgLNAdDYFlkE36upLh1qUHKr7tZrJObee/HcKlaDrfj/ufTPDaDLvAVIPEGIYBH0I23irhaec6Wsa6znjMpFeVZOL2I9N+5kWvvF4LqnJErvabE7ONZahX0q27x7wU9kvAv/tjRE9E5bX4Y9IjSJGagn/jZSAIAIuKSROHCOa/HbZ1HHldBBSCBDDtu4Viegtnf4PHHvXbTIbCT4KwIPPOEYJpSgdlSLOhX5q0QKkIygn9NLf6w3GlfZk9NDF+Zelm98GPGcj4juJtUl0PZ+cIIDcefHQcAIaExB2jaxmcVEhiBcZ60LY408LCusS4ZNxxUiA0qzNev+csTkkhYLpuljWptX52akI+DTw9ZozuPDx2n8fA0mOE=
+
+matrix:
+  fast_finish: true
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm set progress=false
+  - npm prune
+
+script: npm run deploy
